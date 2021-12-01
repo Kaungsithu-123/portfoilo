@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 400vh;
+}
+.bg-text{
+    font-size: 100px;
+    font-weight: bold;
+    opacity: 13%;
+    left: 41%;
+    top: 20%;
+}
+.adjust-txt{
+    font-size: 55px;
+    font-weight: bolder;
+}
+.adjust-height{
+    padding-top: 104px;
+}
+.adjust-height-ipad{
+    padding-top: 65px;
+}
+.color{
+    /*background-color: #495057;*/
+    /*background-color: #2b2b2b;*/
+    background-color: #1c1c1c;
+
+
+}
+.color-2{
+    background-color: #131313;
+    /*height: 130vh;*/
+}
+.color-1{
+    background-color: #1d1d1dee;
+}
+.cp-adjust-1{
+    clip-path: polygon(0 19%, 100% 0, 100% 100%, 0% 100%);
+}
+.img-1{
+    width: 400px;
+}
+.img-adjust{
+    clip-path: polygon(0% 0%, 100% 1%, 100% 83%, 49% 100%, 0 89%);
+}
+.txt-adjustment{
+
+}
+.about-txt{
+    font-size: 36px;
+}
+.margin-adjust{
+    margin-top: 32px;
+}
+.underline{
+
+    width: 177px;
+    height: 3px;
+    margin-left: 43%;
+    margin-top: 3%;
+    border-radius: 33%;
+
+}
+.img-2{
+    width: 90%;
+}
+.border-edition{
+    border-left: 2px solid yellow;
+    border-right: 2px solid yellow;
+    height: 85px;
+}
+.border-edition-p{
+    padding-left: 40px;
+}
+.border-edition-p-1{
+    padding-left: 20px;
+}
+.border-edition-p-2{
+    padding-left: 68px;
+}
+.border-edition-p-3{
+    padding-left: 37px;
+}
+.phone-about{
+    width: 28%;
+    margin-left: 36%;
+}
+.phone-about-1{
+    padding-left: 40px;
+}
+.phone-about-2{
+    padding-left: 20px;
+}
+.phone-about-3{
+    width: 24%;
+    margin-left: 38%;
+}
+/*.card-adjust{*/
+/*    width: 21rem;*/
+/*    height: 29rem;*/
+/*}*/
+.card-txt{
+    padding-top: 25px;
+}
+.card-img{
+    padding-top: 68px;
+}
+.logo{
+    width: 126px;
+    top: -15px;
+    left: 13rem;
+    height: 45px;
+    border-radius: 8px;
+}
+.logo-1{
+    background-color: #ff0000e3;
+}
+.logo-2{
+    background-color: #ffc107;;
+}
+.logo-3{
+    background-color: #0d6efd;
+}
+.logo-4{
+    background-color: #198754;;
+}
+.logo-5{
+    background-color: #dc3545;
+}
+.logo-6{
+    background-color: #6610f2;;
+}
+
+.card{
+    background-color: #efe9e9b0
+}
+.logo-size{
+    padding-left: 10px;
+    padding-top: 7px;
+    font-size: 18px;
+}
+.txt{
+    width: 24%;
+}
+.card-img-2{
+    width: 346px;
+    height: 321px;
+
+}
+.logo-long-txt{
+    width: 145px;
+    top: -15px;
+    left: 12rem;
+    height: 45px;
+    border-radius: 8px;
+}
+.logo-adjust{
+    width: 176px;
+    top: -15px;
+    left: 13rem;
+    height: 45px;
+    border-radius: 8px;
+
+}
+.logo-adjust-2{
+    width: 140px;
+    top: -15px;
+    left: 14rem;
+    height: 45px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+/*phone responsive*/
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+
+
+    .adjust-phone{
+        margin-left: 29px;
+    }
+    .adjust-height{
+        padding-top: 0px;
+    }
+    .adjust-txt{
+        font-size: 30px;
+    }
+    .home-txt-adjust{
+        font-size: 16px !important;
+    }
+    .cp-adjust{
+        height: 100vh !important;
+
+    }
+    .adjust-height-ipad{
+        padding-top: 0;
+    }
+    .phone-about{
+        width: 93%;
+        margin-left: 5%;
+    }
+    .underline{
+        margin-left: 23%;
+    }
+    /*#about{*/
+    /*    height: 192vh;*/
+    /*}*/
+    /*.card-adjust{*/
+    /*    width: 303px;*/
+    /*    height: 418px;*/
+    /*}*/
+    .logo{
+        left: 12rem;
+    }
+    .phone-about-3{
+        width: 89%;
+        margin-left: 6%;
+    }
+    .card-img-2{
+        width: auto;
+        height: auto;
+    }
+    .logo-long-txt{
+        left: 11rem;
+    }
+    .logo-adjust{
+        left: 9rem;
+    }
+    .logo-adjust-2{
+        left: 11rem;
+    }
+
+
+}
+
+
+/*ipad-potrait responsive*/
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+
+    .bg-text{
+        font-size: 55px;
+        font-weight: bold;
+        opacity: 13%;
+        left: 41%;
+        top: 12%;
+    }
+    .cp-adjust{
+        height: 93vh !important;
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+
+    }
+    .adjust-height-ipad{
+        padding-top: 150px;
+    }
+    .adjust-height{
+        padding-top: 0;
+    }
+    .adjust-txt{
+        font-size: 31px;
+    }
+    .adjust-phone{
+        margin-left: 60% !important;
+    }
+    .home-img{
+        width: 90%;
+    }
+    /*#about{*/
+    /*    height: 106vh;*/
+    /*}*/
+    .phone-about{
+        width: 53%;
+        margin-left: 23%;
+    }
+    .underline{
+        margin-left: 40%;
+    }
+    .margin-adjust{
+        margin-top: 170px;
+    }
+    .phone-about-1{
+        padding-left: 133px;
+    }
+    .phone-about-2{
+        padding-left: 107px;
+    }
+    .border-edition-p-3 {
+        padding-left: 17px;
+    }
+    .border-edition-p-2 {
+        padding-left: 59px;
+    }
+    .img-2 {
+        width: 105%;
+    }
+    .phone-about-3{
+        width: 42%;
+        margin-left: 29%;
+    }
+    .card-adjust{
+        width: 99%;
+        height: 29rem;
+    }
+    .logo{
+        left: 10rem;
+    }
+    .logo-long-txt{
+        left: 9rem;
+    }
+    .logo-adjust{
+        left: 7rem;
+    }
+    .logo-adjust-2{
+        left: 9rem;
+    }
+
+
+}
+
+/*ipad-landscape responsive*/
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    .adjust-phone{
+        margin-left: 0 !important;
+    }
+    .adjust-height-ipad{
+        padding-top: 100px;
+    }
+    .adjust-txt {
+        font-size: 45px;
+        font-weight: bolder;
+    }
+    .home-img{
+        width: 80%;
+    }
+    .phone-about {
+        width: 36%;
+        margin-left: 33%;
+    }
+    .phone-about-1 {
+        padding-left: 29px;
+    }
+    .phone-about-2{
+        padding-left: 17px;
+        width: 137px;
+        font-size: 1rem !important;
+    }
+    .border-edition-p-3 {
+        padding-left: 25px;
+    }
+    .border-edition-p-1 {
+        padding-left: 9px;
+        font-size: 1rem !important;
+    }
+    .margin-adjust {
+        margin-top: 87px;
+    }
+    .card-adjust{
+        width: 91%;
+        height: 464px;
+    }
+    .card-img{
+        padding-top: 68px;
+        width: 81%;
+        margin-left: 34px;
+    }
+    .logo{
+        left: 15rem;
+    }
+    .phone-about-3{
+        width: 31%;
+        margin-left: 34%;
+    }
+    .underline{
+        margin-left: 40%;
+    }
+
+}
+
+/*!*ipad pro potrait*!*/
+/*@media only screen*/
+/*and (min-device-width: 1024px)*/
+/*and (max-device-width: 1366px)*/
+/*and (-webkit-min-device-pixel-ratio: 2) {*/
+/*    .ipad-pro{*/
+/*        flex-basis: content;*/
+
+/*    }*/
+/*    .adjust-phone{*/
+/*        margin-left: 26% !important;*/
+/*    }*/
+/*    .ipad-pro-txt{*/
+/*        width: 100%;*/
+/*        padding-top: 70px;*/
+/*    }*/
+/*    .phone-about-1 {*/
+/*        padding-left: 28px !important;*/
+/*    }*/
+/*    .phone-about-2{*/
+/*        padding-left: 26px !important;*/
+/*    }*/
+/*}*/
+
+/*!*ipad-pro landscape*!*/
+/*@media only screen*/
+/*and (min-device-width: 1366px)*/
+/*and (max-device-width: 1366px)*/
+/*and (orientation: landscape)*/
+/*and (-webkit-min-device-pixel-ratio: 2) {*/
+
+/*    .ipad-pro{*/
+/*        flex-basis: unset;*/
+
+/*    }*/
+
+/*}*/
