@@ -1,0 +1,50 @@
+:root{
+    --home-color:#dee1e6eb;
+    --about-color:#7E76F910;
+    --text:#41464b;
+    --second:#000000;
+}
+body.night-mode{
+    transition: 0.5s;
+}
+.night-mode #home{
+    background-color: var(--home-color);
+}
+.night-mode .text-dm{
+    color: var(--text) !important;
+    font-weight: bold;
+}
+.night-mode .text-dm-2{
+    color: var(--second) !important;
+}
+.night-mode #about{
+    background-color: var(--about-color);
+}
+.night-mode .text-dm-3{
+    color: var(--text) !important;
+}
+.night-mode #services{
+    background-color: var(--home-color);
+}
+.night-mode #project{
+    background-color: var(--about-color);
+}
+.night-mode .text-dm-4{
+    background-color: var(--bs-warning);
+}
+.night-mode #contact{
+    background-color: var(--home-color);
+}
+/*.night-mode .bg-control-dm{*/
+/*    background-color: var(--bs-light) !important;*/
+/*}*/
+/*.night-mode .nav-control{*/
+/*    background-color: var(--bs-light) !important;*/
+/*    color: var(--text) !important;*/
+/*}*/
+/*.night-mode .bg-adjust-dm{*/
+/*    background-color: var(--bs-light) !important;*/
+/*}*/
+/*.night-mode .navbar-toggler-icon {*/
+/*    color: var(--text);*/
+/*}*/

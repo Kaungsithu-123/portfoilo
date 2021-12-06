@@ -13,297 +13,765 @@
     <link rel="stylesheet" href="vendor/animate_it/animate.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="nightmood.css">
+
 </head>
 
-<body >
+<body>
 
-<!--nav section-->
-<div class="container-fluid  ">
-    <div class="row">
-        <div class="col-12 bg-dark shadow " >
-            <div class="container " >
-                <div class="row " >
-                    <div class="col-12 " >
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
-                            <div class="container-fluid">
-                               <div class="">
 
-                                   <a class="navbar-brand fs-3 fw-bold" href="#">Si <span class="text-warning">Thu's</span>  . .</a>
-                               </div>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item px-3">
-                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                        </li>
-                                        <li class="nav-item px-3">
-                                            <a class="nav-link" href="#">About</a>
-                                        </li>
-                                        <li class="nav-item px-3">
-                                            <a class="nav-link" href="#">Services</a>
-                                        </li>
-                                        <li class="nav-item px-3">
-                                            <a class="nav-link" onclick="showAlert()" href="#">Blogs</a>
-                                        </li>
-                                        <li class="nav-item px-3">
-                                            <a class="nav-link" href="#">Projects</a>
-                                        </li>
-                                        <li class="nav-item px-3">
-                                            <a class="nav-link" href="#">Contact</a>
-                                        </li>
-                                    </ul>
+    <!--nav section-->
+    <div class="container-fluid site-nav  ">
+        <div class="row">
+            <div class="col-12  bg-adjust-dm wow animate__slideInDown ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-12 ">
+                            <nav class="navbar navbar-expand-lg navbar-dark bg-adjust-dm">
+                                <div class="container-fluid">
+                                    <div class="">
+
+                                        <a class="navbar-brand fs-3 fw-bold " href="#">Si <span
+                                                class="text-warning">Thu's</span> . .</a>
+                                    </div>
+                                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <i class="fa fa-bars text-light menu-icon" style="font-size: 2rem;"></i>
+                                    </button>
+                                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                        <ul class="navbar-nav ">
+                                            <li class="nav-item px-3">
+                                                <a class="nav-link  " aria-current="page" href="#home">Home</a>
+                                            </li>
+                                            <li class="nav-item px-3">
+                                                <a class="nav-link " href="#about">About</a>
+                                            </li>
+                                            <li class="nav-item px-3">
+                                                <a class="nav-link " href="#services">Services</a>
+                                            </li>
+                                            <li class="nav-item px-3">
+                                                <a class="nav-link " onclick="showAlert()" href="#">Blogs</a>
+                                            </li>
+                                            <li class="nav-item px-3">
+                                                <a class="nav-link " href="#project">Projects</a>
+                                            </li>
+                                            <li class="nav-item px-3">
+                                                <a class="nav-link " href="#contact">Contact</a>
+                                            </li>
+                                            <li class="nav-item px-3">
+                                                <i class="nav-link far fa-moon text-light " id="mode-icon"
+                                                    onclick="changeMood()" style="padding-top: 12px;"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--nav section-->
+
+    <!--home section-->
+    <div class="container-fluid vh-100     color " id="home" style="background-attachment: fixed;">
+        <div class="row">
+            <div class="col-12 ">
+                <div class="container ">
+                    <div class="row align-items-center  adjust-height-ipad ">
+                        <div class="col-12 col-lg-6 col-md-6  my-5 ipad-pro ">
+                            <div class="margin-ad-dm">
+                                <img src="img/kg_siThu_2.png" alt="" width="70%"
+                                    class="home-img  adjust-phone wow animate__zoomIn animate__delay-2s ">
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 col-md-12 ipad-pro-txt   adjust-height pb-4 pb-md-0 animate__animated animate__backInRight animation-delay-3s">
+                            <div class="">
+                                <span class=" text-warning  adjust-txt  ">I'm <span class="auto-input"></span></span>
+                                <br>
+                                <div class="pt-3 pb-1 ">
+                                    <span class="text-white home-txt-adjust text-dm "
+                                        style="font-size: 20px;">Congraulations!Now you're at the site of the portfoilo
+                                        that is super appropriate to create the massive opportunities for your business.
+                                    </span>
+                                </div>
+                                <span class="text-white-50 text-dm-2" style="font-size: 16px;">Commence your Journey
+                                    with me!</span>
+                                <div class="pt-3">
+                                    <button class="btn btn-outline-warning mx-2" id="btn-adjust">Contact</button>
+                                    <button class="btn btn-warning text-white fw-bold">Download CV</button>
                                 </div>
                             </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--nav section-->
 
-<!--home section-->
-<div class="container-fluid  min-vh-100   color " id="home" style="background-attachment: fixed;" >
-    <div class="row">
-       <div class="col-12 ">
-<!--           <p class="text-white position-absolute bg-text d-none d-md-block d-lg-block">Home</p>-->
-           <div class="container ">
-               <div class="row align-items-center  adjust-height-ipad ">
-                       <div class="col-12 col-lg-6 col-md-6  my-5 ipad-pro ">
-                           <div class="">
-                               <img src="img/kg_siThu_2.png"  alt="" width="70%" class="home-img  adjust-phone " >
-                           </div>
-                       </div>
-                       <div class="col-12 col-lg-6 col-md-12 ipad-pro-txt   adjust-height pb-4 pb-md-0 ">
-                           <div class="">
-                               <span class=" text-warning  adjust-txt">I'm <span class="auto-input"></span></span> <br>
-                               <div class="pt-3 pb-1">
-                                   <span class="text-white home-txt-adjust" style="font-size: 20px;">Congraulations!Now you're at the site of the portfoilo that is super appropriate to create the massive opportunities for your business.      </span>
-                               </div>
-                               <span class="text-white-50" style="font-size: 16px;">Commence your Journey with me!</span>
-                               <div class="pt-3">
-                                   <button class="btn btn-outline-warning mx-2">Contact</button>
-                                   <button class="btn btn-warning text-white fw-bold">Download CV</button>
-                               </div>
-                           </div>
-
-                       </div>
-
-               </div>
-
-
-
-           </div>
-       </div>
-    </div>
-</div>
-<!--home section-->
-
-<!--about section-->
-<section class="container-fluid color-2 " id="about">
-    <div class="row">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 ">
-                    <div class="" style="margin-top: 6%">
-                        <p class="text-white text-center fw-bold about-txt">About</p>
-                        <div class="text-center phone-about" >
-                            <p class="text-white text-center fw-bold">My name is <span class="">Kaung Si Thu</span> . Now, I'm on my way of studying to be <span class="">Full-Stack Dev</span> . Thanks in advance for your atttention</p>
                         </div>
+
                     </div>
-                    <div class="underline bg-warning"></div>
+
+
+
                 </div>
             </div>
         </div>
+    </div>
+    <!--home section-->
 
-        <div class="col-12 position-relative">
-
+    <!--about section-->
+    <section class="container-fluid color-2 " id="about">
+        <div class="row">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6 mb-5" style="margin-top: 94px;">
-                       <div class="">
-                           <p class="text-white  fw-bold" style="font-size: 39px;">Hello! Dear</p>
-                           <p class="text-white-50 fw-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci animi autem, blanditiis commodi eum eveniet facilis hic illum ipsam laboriosam, nesciunt nobis non nulla placeat provident quas vel veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad alias architecto atque consectetur consequatur deserunt dicta distinctio ea eveniet exercitationem fuga, fugiat molestiae pariatur placeat quod temporibus voluptate.</p>
-                           <div class="row mt-5">
-                               <div class="col-12 col-md-12 col-lg-4 mt-md-5">
-                                   <div class="border-edition">
-                                       <p class="text-white  fs-5 fw-bold phone-about-1" >2 <sup>nd</sup> year</p>
-                                       <p class="text-white  fs-5 fw-bold phone-about-2" >HND Diploma</p>
-                                   </div>
-                               </div>
-                               <div class="col-12 col-md-5 col-lg-4 mt-5 mt-md-5">
-                                   <div class="border-edition">
-                                       <p class="text-white  fs-5 fw-bold border-edition-p-2" >1 <sup>st</sup> </p>
-                                       <p class="text-white  fs-5 fw-bold border-edition-p-3" >Semester</p>
-                                   </div>
-                               </div>
-                               <div class="col-12 col-md-7 col-lg-4 mt-5 mt-md-5">
-                                   <div class="border-edition">
-                                       <p class="text-white  fs-5 fw-bolder border-edition-p-2" > 10 <span class="">+</span> </p>
-                                       <p class="text-white  fs-5 fw-bold border-edition-p-1" >projects Done</p>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
+                    <div class="col-12 ">
+                        <div class="" style="margin-top: 6%">
+                            <p class="text-white text-center fw-bold about-txt text-dm-3 wow animate__bounceInLeft">
+                                About</p>
+                            <div class="text-center phone-about">
+                                <p
+                                    class="text-white text-center fw-bold text-dm-3 wow animate__fadeInUp animate__delay-1s">
+                                    My name is <span class="">Kaung Si Thu</span> . Now, I'm on my way of studying to be
+                                    <span class="">Full-Stack Dev</span> . Thanks in advance for your atttention
+                                </p>
+                            </div>
+                        </div>
+                        <div class="underline bg-warning wow animate__fadeInUp animation-delay-2half"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 position-relative">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-1 " style="margin-top: 94px;">
+                            <div class="pt-3">
+                                <p class="text-white  fw-bold text-dm-3 wow animate__flipInX animation-delay-2half"
+                                    style="font-size: 39px;">Hello! Dear</p>
+                                <p
+                                    class="text-white-50 fw-bold text-dm-3 wow animate__lightSpeedInLeft animation-delay-3s">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci animi autem,
+                                    blanditiis commodi eum eveniet facilis hic illum ipsam laboriosam, nesciunt nobis
+                                    non nulla placeat provident quas vel veritatis. Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. A ab ad alias architecto atque consectetur consequatur
+                                    deserunt dicta distinctio ea eveniet exercitationem fuga, fugiat molestiae pariatur
+                                    placeat quod temporibus voluptate.</p>
+                                <div class="row mt-5 opacity-lg-100 opacity-md-0 ">
+                                    <div class="col-12 col-md-12 col-lg-4 mb-md-5 mb-lg-0  mb-3">
+                                        <div class="border-edition wow animate__zoomIn animation-delay-1half">
+                                            <p class="text-white text-dm-3  fs-5 fw-bold phone-about-1">2 <sup>nd</sup>
+                                                year</p>
+                                            <p class="text-white text-dm-3  fs-5 fw-bold phone-about-2">HND Diploma</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 col-lg-4 mb-lg-0 mb-md-3 mb-3  ">
+                                        <div class="border-edition wow animate__zoomIn animation-delay-1half">
+                                            <p class="text-white text-dm-3  fs-5 fw-bold border-edition-p-2">1
+                                                <sup>st</sup>
+                                            </p>
+                                            <p class="text-white text-dm-3  fs-5 fw-bold border-edition-p-3">Semester
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-7 col-lg-4 mb-lg-0 mb-md-3 mb-3  ">
+                                        <div class="border-edition wow animate__zoomIn animation-delay-1half">
+                                            <p class="text-white text-dm-3  fs-5 fw-bolder border-edition-p-2"> 10 <span
+                                                    class="">+</span> </p>
+                                            <p class="text-white text-dm-3  fs-5 fw-bold border-edition-p-1">projects
+                                                Done</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-6 margin-adjust mb-5">
+                            <img src="img/img1.jpg" alt=""
+                                class="img-fluid img-2 wow animate__rotateInDownRight animation-delay-2half"
+                                style="border-radius: 77% 23% 70% 30% / 47% 68% 32% 53% ">
+                        </div>
+                        <div class="row mb-5 mt-md-5 wow animate__slideInUp" style="margin-left: 12px;">
+                            <div class="col-6 col-md-3 pb-2 pb-md-0 position-relative ">
+                                <div class="">
+                                    <p
+                                        class="text-light position-absolute  percentage-adjust text-uppercase fw-bold text-dm-3">
+                                        html/css</p>
+                                    <i class="fab fa-html5 text-light position-absolute icon-adjust text-dm-3"></i>
+                                    <i class="fab fa-css3 text-light position-absolute icon-adjust-2 text-dm-3"></i>
+                                    <div class="chart text-light text-dm-3 fw-bold" data-percent="73">73%</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 pb-2 pb-md-0 position-relative">
+                                <div class="">
+                                    <p
+                                        class="text-light position-absolute  percentage-adjust text-uppercase fw-bold text-dm-3">
+                                        Javascript</p>
+                                    <i class="fab fa-js text-light position-absolute icon-adjust-2 fw-bold"></i>
+                                    <div class="chart text-light text-dm-3 fw-bold" data-percent="40">40%</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 position-relative mt-5 mt-md-0">
+                                <div class="">
+                                    <p
+                                        class="text-light position-absolute text-dm-3  percentage-adjust text-uppercase fw-bold">
+                                        Photoshop</p>
+                                    <i
+                                        class="fas fa-record-vinyl text-light text-dm-3 position-absolute icon-adjust-2"></i>
+                                    <div class="chart text-light text-dm-3 fw-bold" data-percent="73">73%</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 position-relative mt-5 mt-md-0 ">
+                                <div class="">
+                                    <p
+                                        class="text-light position-absolute text-dm-3  percentage-adjust-2 text-uppercase fw-bold">
+                                        Designer</p>
+                                    <i class="fas fa-eraser text-dm-3 text-light position-absolute icon-adjust-2"></i>
+                                    <div class="chart text-light text-dm-3 fw-bold" data-percent="50">50%</div>
+                                </div>
+                            </div>
+
+                        </div>
 
                     </div>
-                    <div class="col-12 col-md-6 margin-adjust mb-5">
-                        <img src="img/img1.jpg" alt="" class="img-fluid img-2" style="border-radius: 77% 23% 70% 30% / 47% 68% 32% 53% ">
-                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--about section-->
 
+    <!--service section-->
+    <section class="container-fluid color " id="services">
+        <div class="row">
+            <div class="col-12">
+                <div class="mt-5 mb-3">
+                    <p class="text-light text-center fw-bold about-txt text-dm-3 wow animate__zoomIn">Services</p>
+                    <div class="text-center phone-about-3">
+                        <p class="text-light text-dm-3 wow animate__lightSpeedInLeft animation-delay-1half">Here are the
+                            services I'm running currently. You can select the services as your preference.</p>
+                    </div>
+                    <div class="underline bg-warning wow animate__fadeInUp animation-delay-1half"></div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-5 wow animate__fadeInUp animation-delay-1half">
+                            <div class="card card-adjust card-hover-service">
+                                <img src="img/web_Design.svg" class="card-img card-img-2" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text card-txt fw-bold">I've been running this services for couple of
+                                        years. We can serve until you satisfy the design</p>
+                                </div>
+                                <div class="logo logo-1 position-absolute ">
+                                    <p class="logo-size fw-bold text-light ">Web Design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-5 wow animate__fadeInUp animate__delay-2s">
+                            <div class="card card-adjust card-hover-service">
+                                <img src="img/Designer.svg" class="card-img card-img-2" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text card-txt fw-bold">I've been running this services for couple of
+                                        years. We can serve until you satisfy the design</p>
+                                </div>
+                                <div class="logo logo-2 position-absolute">
+                                    <p class="logo-size fw-bold text-dark ">UX Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-5 wow animate__fadeInUp animation-delay-2half">
+                            <div class="card card-adjust card-hover-service">
+                                <img src="img/online_teaching.svg" class="card-img card-img-2" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text card-txt fw-bold">I've been running this services for couple of
+                                        years. We can serve until you satisfy the design</p>
+                                </div>
+                                <div class="logo-long-txt logo-3 position-absolute">
+                                    <p class="logo-size fw-bold text-light ">Online Classes </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-4 my-5 wow animate__fadeInUp animation-delay-3s">
+                            <div class="card card-adjust card-hover-service">
+                                <img src="img/translate.svg" class="card-img card-img-2" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text card-txt fw-bold">I've been running this services for couple of
+                                        years. We can serve until you satisfy the design</p>
+                                </div>
+                                <div class="logo logo-4 position-absolute">
+                                    <p class="logo-size fw-bold text-light ">Translation</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-4 my-5 wow animate__fadeInUp animation-delay-3half">
+                            <div class="card card-adjust card-hover-service">
+                                <img src="img/content-creator.svg" class="card-img card-img-2" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text card-txt fw-bold">I've been running this services for couple of
+                                        years. We can serve until you satisfy the design</p>
+                                </div>
+                                <div class=" logo-5 logo-adjust position-absolute">
+                                    <p class="logo-size fw-bold text-light ">Content - Creator</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-4 my-5 wow animate__fadeInUp animation-delay-1half">
+                            <div class="card card-adjust card-hover-service">
+                                <img src="img/social-ads.svg" class="card-img card-img-2" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text card-txt fw-bold">I've been running this services for couple of
+                                        years. We can serve until you satisfy the design</p>
+                                </div>
+                                <div class="logo-adjust-2 logo-6 position-absolute">
+                                    <p class="logo-size fw-bold text-light">Social-boost</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--service section-->
+
+    <!--project section-->
+    <section class="container-fluid color-2  " id="project">
+        <div class="row ">
+            <div class="col-12 mt-3">
+                <div class="text-center mb-3">
+                    <p class="text-warning pb-0 fs-5 fw-bold text-dm-3 ">projects</p>
+                    <p class="text-white fw-bold about-txt mb-5 text-dm-4">Featuered Projects</p>
+                </div>
+                <div class="container">
+                    <div class="row margin-adjust-2  mb-5">
+                        <div class="col-12 col-md-6 col-lg-4 card-hover ">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/calculator.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text fw-bold">calculator</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0 card-hover ">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/marketing.png" class="card-img-top" alt="..." height="168px;">
+                                <div class="card-body">
+                                    <p class="card-text fw-bold">Marketing Website</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 card-hover mt-5 mt-lg-0 ">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/fb.png" class="card-img-top" alt="..." height="168px">
+                                <div class="card-body">
+                                    <p class="card-text fw-bold">Facebook Clone</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 card-hover mt-5 ">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/exchange.png" class="card-img-top" alt="..." height="168px;">
+                                <div class="card-body">
+                                    <p class="card-text fw-bold">Money Exchange Website</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 card-hover mt-5 ">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/gym.png" class="card-img-top" alt="..." height="168px;">
+                                <div class="card-body">
+                                    <p class="card-text fw-bold">Gym Project</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 card-hover mt-5 wow animate__zoomIn">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/clock.png" class="card-img-top" alt="..." height="168px;">
+                                <div class="card-body">
+                                    <p class="card-text fw-bold">StopWatch</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="container">
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <div class="">
+                                    <p class="text-light fw-bold text-center about-txt text-dm-3">Client's Voices</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pricing-slide margin-adjust-3 mb-5">
+                            <div class="col-12 col-md-6">
+                                <div class="client card-margin">
+                                    <div class="d-flex">
+                                        <div class="">
+                                            <img src="img/mZ.jpg" width="100px" style="border-radius: 50%" alt="">
+                                        </div>
+                                        <div class="pt-3 px-3">
+                                            <p class="text-light mb-0 fw-bold text-dm-3 ">MarkZukarbeg</p>
+                                            <p class="text-light fw-bold text-dm-3"><span
+                                                    class="text-danger fw-bold">VIP</span> - Client</p>
+                                            <i class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3">
+                                        <p class="text-light width-adjust text-dm-3">What a greate service! All the
+                                            solution for technical problem is from him. </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="client card-margin">
+                                    <div class="d-flex">
+                                        <div class="">
+                                            <img src="img/mourinho.jpg" width="100px" style="border-radius: 50%" alt="">
+                                        </div>
+                                        <div class="pt-3 px-3">
+                                            <p class="text-light mb-0 fw-bold text-dm-3 ">Mourinho</p>
+                                            <p class="text-light text-dm-3">Client</p>
+                                            <i class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3">
+                                        <p class="text-light width-adjust text-dm-3">Worth Every Penny. I guarantee
+                                            you'll never upset about the service. </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="client card-margin">
+                                    <div class="d-flex">
+                                        <div class="">
+                                            <img src="img/italy.jpg" width="100px" style="border-radius: 50%" alt="">
+                                        </div>
+                                        <div class="pt-3 px-3">
+                                            <p class="text-light mb-0 fw-bold text-dm-3 ">Swamn Nyi Nyi Zaw</p>
+                                            <p class="text-light text-dm-3">Client</p>
+                                            <i class="fas fa-star text-warning "></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star-half text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3">
+                                        <p class="text-light width-adjust text-dm-3">Superb!Glad to see such a great
+                                            one.Can't wait to work with him again </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="client card-margin ">
+                                    <div class="d-flex">
+                                        <div class="">
+                                            <img src="img/hh.jpg" width="100px" style="border-radius: 50%" alt="">
+                                        </div>
+                                        <div class="pt-3 px-3">
+                                            <p class="text-light mb-0 fw-bold text-dm-3 ">Hein Htet</p>
+                                            <p class="text-light fw-bold text-dm-3"><span
+                                                    class="text-danger fw-bold">VIP</span> - Client</p>
+                                            <i class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3">
+                                        <p class="text-light width-adjust text-dm-3"> Much obliged to u for the greatest
+                                            services more than we reckon! </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="client card-margin ">
+                                    <div class="d-flex">
+                                        <div class="">
+                                            <img src="img/elonMusk.jpg" width="100px" style="border-radius: 50%" alt="">
+                                        </div>
+                                        <div class="pt-3 px-3">
+                                            <p class="text-light mb-0 fw-bold text-dm-3 ">Elon Musk</p>
+                                            <p class="text-light text-dm-3">Client</p>
+                                            <i class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3">
+                                        <p class="text-light width-adjust text-dm-3"> Appreciate your great effort on
+                                            the things U did for our community! Hope to see you soon. </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="client card-margin">
+                                    <div class="d-flex">
+                                        <div class="">
+                                            <img src="img/JB.jpg" width="100px" style="border-radius: 50%" alt="">
+                                        </div>
+                                        <div class="pt-3 px-3">
+                                            <p class="text-light mb-0 fw-bold text-dm-3 ">Jeff Bezos</p>
+                                            <p class="text-light text-dm-3">Client</p>
+                                            <i class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i> <i
+                                                class="fas fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3">
+                                        <p class="text-light width-adjust text-dm-3"> Service u offered are worth more
+                                            than we paid. That's awesome. </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!--about section-->
 
-<!--service section-->
-<section class="container-fluid color ">
-    <div class="row">
-        <div class="col-12">
-            <div class="mt-5 mb-3">
-                <p class="text-light text-center fw-bold about-txt">Services</p>
-                <div class="text-center phone-about-3">
-                    <p class="text-light">Here are the services I'm running currently. You can select the services as your preference.</p>
+
+    </section>
+    <!--project section-->
+
+    <!--contact section-->
+    <section class="container-fluid color " id="contact">
+        <div class="row" style="margin-left: 10px;">
+            <div class="col-12 mt-5">
+                <div class="">
+                    <p class="text-light fw-bold about-txt text-center text-dm-3 wow animate__fadeIn">Get In touch</p>
                 </div>
-                <div class="underline bg-warning"></div>
-            </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-5">
-                        <div class="card card-adjust" >
-                            <img src="img/web_Design.svg" class="card-img card-img-2" alt="...">
-                            <div class="card-body">
-                                <p class="card-text card-txt fw-bold">I've been running this services for couple of years. We can serve until you satisfy the design</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-5">
+                            <div class="">
+                                <p class="text-light fw-bold  fw-bold contact-adjust text-dm-3">Contact Info</p>
                             </div>
-                            <div class="logo logo-1 position-absolute ">
-                                <p class="logo-size fw-bold text-light ">Web Design</p>
+                            <div class="underline"></div>
+                            <div class="row" style="margin-top: 50px;">
+                                <div class="col-6 col-md-6 ">
+                                    <div class="">
+                                        <i class="fas fa-phone-alt text-warning font-size text-center mx-3 "
+                                            style="transform: rotate(90deg)"></i>
+                                        <p class="text-warning fw-bold fs-5 pt-3 mb-0 ">Phone</p>
+                                        <p class="text-light fw-bold text-dm-3  mb-0">09-1234567</p>
+                                        <p class="text-light fw-bold text-dm-3 ">09-7654321</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="">
+                                        <i class="fas fa-map-marker-alt font-size text-success fw-bold "
+                                            style="margin-left: 33px;"></i>
+                                        <p class="text-light fs-5 fw-bold pt-3 mb-0 text-dm-3">Address</p>
+                                        <p class="text-light fw-bold fs-3 text-uppercase text-dm-3">Myanmar</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6 mt-2 mt-md-0">
+                                    <div class="">
+                                        <i class="fas fa-envelope-open font-size text-danger fw-bold "
+                                            style="margin-left: 33px;"></i>
+                                        <p class="text-danger fs-5 fw-bold pt-3 mb-0">Gmail</p>
+                                        <p class="text-light fw-bold  text-dm-3">blah@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6 mt-2 mt-md-0">
+                                    <div class="">
+                                        <i class="fab fa-telegram-plane font-size text-primary fw-bold "
+                                            style="margin-left: 33px;"></i>
+                                        <p class="text-primary fs-5 fw-bold pt-3 mb-0">Telegram</p>
+                                        <p class="text-light fw-bold text-dm-3  text-uppercase">mgzaw123</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-5">
-                        <div class="card card-adjust" >
-                            <img src="img/Designer.svg" class="card-img card-img-2" alt="...">
-                            <div class="card-body">
-                                <p class="card-text card-txt fw-bold">I've been running this services for couple of years. We can serve until you satisfy the design</p>
+                        <div class="col-12 col-md-6 mb-5" style="margin-top: 15px;">
+                            <div class="p-adjust">
+                                <p class="text-light fw-bold  fw-bold contact-adjust text-dm-3">DM to me</p>
                             </div>
-                            <div class="logo logo-2 position-absolute">
-                                <p class="logo-size fw-bold text-dark ">UX Designer</p>
-                            </div>
+                            <form action="">
+                                <div class="form-group mb-3 rounded">
+                                    <input type="text" class="form-control bg-dark text-light" placeholder="Name">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control bg-dark text-light" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea type="text" rows="5" class="form-control bg-dark text-light"
+                                        placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group mt-3 mb-3 ">
+                                    <button id="test1" class="btn btn-primary" onclick="test()">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-5">
-                        <div class="card card-adjust" >
-                            <img src="img/online_teaching.svg" class="card-img card-img-2" alt="...">
-                            <div class="card-body">
-                                <p class="card-text card-txt fw-bold">I've been running this services for couple of years. We can serve until you satisfy the design</p>
-                            </div>
-                            <div class="logo-long-txt logo-3 position-absolute">
-                                <p class="logo-size fw-bold text-light ">Online Classes </p>
-                            </div>
-                        </div>
-                    </div>
-
-                     <div class="col-12 col-md-6 col-lg-6 col-xl-4 my-5">
-                         <div class="card card-adjust" >
-                             <img src="img/translate.svg" class="card-img card-img-2" alt="...">
-                             <div class="card-body">
-                                 <p class="card-text card-txt fw-bold">I've been running this services for couple of years. We can serve until you satisfy the design</p>
-                             </div>
-                             <div class="logo logo-4 position-absolute">
-                                 <p class="logo-size fw-bold text-light ">Translation</p>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="col-12 col-md-6 col-lg-6 col-xl-4 my-5">
-                         <div class="card card-adjust" >
-                             <img src="img/content-creator.svg" class="card-img card-img-2" alt="...">
-                             <div class="card-body">
-                                 <p class="card-text card-txt fw-bold">I've been running this services for couple of years. We can serve until you satisfy the design</p>
-                             </div>
-                             <div class=" logo-5 logo-adjust position-absolute">
-                                 <p class="logo-size fw-bold text-light ">Content  -  Creator</p>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="col-12 col-md-6 col-lg-6 col-xl-4 my-5">
-                         <div class="card card-adjust" >
-                             <img src="img/social-ads.svg" class="card-img card-img-2" alt="...">
-                             <div class="card-body">
-                                 <p class="card-text card-txt fw-bold">I've been running this services for couple of years. We can serve until you satisfy the design</p>
-                             </div>
-                             <div class="logo-adjust-2 logo-6 position-absolute">
-                                 <p class="logo-size fw-bold text-light">Social-boost</p>
-                             </div>
-                         </div>
-                     </div>
-
 
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!--service section-->
+        <div class="row">
 
-<!--project section-->
-<section class="container-fluid color-2">
-    <div class="row">
-        <div class="col-12">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6"></div>
-
-                    <div class="col-12 col-md-6"></div>
-                    <div class="col-12 col-md-6"></div>
-                </div>
-            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59174.54773869685!2d96.43967852694932!3d22.033935828290208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cc9e9c4e50f127%3A0xe9303d2a683f438f!2sPyin%20Oo%20Lwin!5e0!3m2!1sen!2smm!4v1638549019749!5m2!1sen!2smm"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-    </div>
+    </section>
+    <!--contact section-->
+
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="vendor/jquery-3.3.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="vendor/jquery.easypiechart.js"></script>
+    <script src="vendor/way_point/jquery.waypoints.min.js"></script>
+    <script src="vendor/wow/wow.js"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Kaung Si Thu", "Web-Developer", "UX Designer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+        wow = new WOW(
+            {
+                boxClass: 'wow',      // default
+                animateClass: 'animate__animated', // default
+                offset: 0,          // default
+                mobile: true,       // default
+                live: true        // default
+            }
+        )
+        wow.init()
+        function showAlert() {
+            Swal.fire({
+                title: 'Sorry!',
+                text: 'Blogs section is not available!',
+                imageUrl: 'data:image/jpeg;base64,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',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+            })
+
+        }
+
+        $('.pricing-slide').slick({
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
 
 
-</section>
+        $('.chart').easyPieChart({
+            barColor: "#fd7e14",
+
+            scaleColor: "red",
+            trackColor: "black"
+        });
+
+        function setActive(current) {
+            $(`.nav-link`).removeClass('current-section');
+            $(`.nav-link[href='#${current}']`).addClass('current-section');
+        }
+
+        function navScroll() {
+            let currentSection = $("section[id]");
+            currentSection.waypoint(function (direction) {
+
+                if (direction === 'down') {
+                    let currentSection = $(this.element).attr("id");
+                    console.log(currentSection);
+                    setActive(currentSection);
+                }
+            },
+                { offset: '10px' });
+            currentSection.waypoint(function (direction) {
+
+                if (direction === 'up') {
+                    let currentSection = $(this.element).attr("id");
+                    console.log(currentSection);
+                    setActive(currentSection);
+                }
+
+            },
+                { offset: '100px' });
 
 
+        }
+        navScroll();
 
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="app.js"></script>
-<script src="node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
-<script>
-    var typed= new Typed(".auto-input",{
-        strings:["Kaung Si Thu","Web-Developer","UX Designer"],
-        typeSpeed:100,
-        backSpeed:100,
-        loop:true
-    });
-
-    function  showAlert() {
-        Swal.fire({
-            title: 'Sorry!',
-            text: 'Blogs section is not available!',
-            imageUrl: 'data:image/jpeg;base64,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',
-            imageWidth: 400,
-            imageHeight: 200,
-            imageAlt: 'Custom image',
-        })
-
-    }
-</script>
+    </script>
 </body>
 
 

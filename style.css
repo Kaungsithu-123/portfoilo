@@ -70,8 +70,8 @@ body{
     width: 90%;
 }
 .border-edition{
-    border-left: 2px solid yellow;
-    border-right: 2px solid yellow;
+    border-left: 2px solid var(--bs-warning);
+    border-right: 2px solid var(--bs-warning);
     height: 85px;
 }
 .border-edition-p{
@@ -162,7 +162,7 @@ body{
 .logo-adjust{
     width: 176px;
     top: -15px;
-    left: 13rem;
+    left: 10rem;
     height: 45px;
     border-radius: 8px;
 
@@ -170,15 +170,136 @@ body{
 .logo-adjust-2{
     width: 140px;
     top: -15px;
-    left: 14rem;
+    left: 12rem;
     height: 45px;
     border-radius: 8px;
 }
+.card-hover{
+    transition: 0.5s;
+}
+.card-hover:hover{
+    transform: translateY(9%);
+}
+.margin-adjust-2{
+    margin-left: 18px;
+}
+.card-hover-service{
+    transition: 0.5s;
+}
+.card-hover-service:hover{
+    transform: translate(2%,3%);
 
+}
+.card-width{
+    width: 38rem;
+}
+.margin-adjust-3{
+    margin-left: 16px;
+}
+.slick-dots li {
+    width:10px !important;
+    height:10px !important;
+    background-color: transparent;
+    border: 2px solid #7E76F9 ;
+    border-radius: 50%;
+}
+.slick-dots li.slick-active{
+    width: 15px !important;
+    height: 15px !important;
+    background-color:#7E76F9 !important; ;
+}
+.slick-dots{
+    margin: -2rem;
+}
+.width-adjust{
+    width: 400px;
+}
+.chart{
+    position: relative;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 110px;
+}
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: blue;
+}
+.percentage-adjust{
+    left: 1px;
+}
+.percentage-adjust-2{
+    left: 20px;
+}
+.icon-adjust{
+    top: 26px;
+    font-size: 20px;
+}
+ .icon-adjust-2{
+     top: 26px;
+     font-size: 20px;
+     left: 51px ;
+}
+ .font-size{
+     font-size: 50px;
+ }
+ .border-adjust-1{
+     border-right: 1px solid white;
+ }
+ .contact-adjust{
+     margin-left: 3rem;
+     font-size: 2rem;
 
+ }
+ .p-adjust{
+     padding-bottom: 22px;
+ }
+ .bg-adjust-dm{
+     background-color: #000000;
+     z-index: 30000;
+ }
+ .site-nav{
+     position: absolute;
+     top: 0;
+     z-index: 50;
+ }
+.site-nav-scroll{
+    position: fixed;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px #00000020;
+    animation: toShow 1s linear;
+}
+@keyframes toShow{
+    form{
+        transform:translateY(-200px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.nav-link.current-section{
+   color: red !important;
+    font-weight: bold;
 
-
-
+}
+.animation-delay-1half{
+    animation-delay: 1.5s;
+}
+.animation-delay-3s{
+    animation-delay: 3s;
+}
+.animation-delay-2half{
+    animation-delay: 2.5s;
+}
+.animation-delay-3half{
+    animation-delay: 3.5s;
+}
+.card-margin{
+    margin-left: 20rem;
+}
 
 /*phone responsive*/
 @media only screen
@@ -187,8 +308,12 @@ and (max-device-width: 667px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
 
-
-
+    .card-margin{
+        margin-left: 0;
+    }
+    .margin-ad-dm{
+        margin-top: 3rem;
+    }
     .adjust-phone{
         margin-left: 29px;
     }
@@ -215,13 +340,10 @@ and (orientation: portrait) {
     .underline{
         margin-left: 23%;
     }
-    /*#about{*/
-    /*    height: 192vh;*/
-    /*}*/
-    /*.card-adjust{*/
-    /*    width: 303px;*/
-    /*    height: 418px;*/
-    /*}*/
+    .percentage-adjust{
+        left: -12px;
+        top: -29px;
+    }
     .logo{
         left: 12rem;
     }
@@ -242,6 +364,51 @@ and (orientation: portrait) {
     .logo-adjust-2{
         left: 11rem;
     }
+    .card-width{
+        width: 18rem;
+    }
+    .icon-adjust{
+        top: 1px;
+        font-size: 24px;
+        left: -9px;
+    }
+    .icon-adjust-2 {
+        top: 1px;
+        font-size: 23px;
+        left: 17px;
+    }
+    .percentage-adjust-2 {
+        left: -11px;
+        top: -25px;
+    }
+    .width-adjust {
+        width: 287px;
+    }
+    .nav-item{
+        margin-left: 26px;
+        margin-top: 10px;
+        border: 1px solid white;
+        border-radius: 12px;
+        background-color: #212529;
+    }
+    .nav-link{
+        margin-left: 90px;
+        color: white !important;
+        font-weight: bold;
+    }
+    .navbar-nav{
+        margin-bottom: 8px;
+    }
+
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0 !important;
+        box-shadow: none !important;
+    }
+    .nav-link .current-section{
+
+
+    }
 
 
 }
@@ -254,7 +421,9 @@ and (max-device-width: 1024px)
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 1) {
 
-
+    .card-margin{
+        margin-left: 0;
+    }
     .bg-text{
         font-size: 55px;
         font-weight: bold;
@@ -296,16 +465,19 @@ and (-webkit-min-device-pixel-ratio: 1) {
         margin-top: 170px;
     }
     .phone-about-1{
-        padding-left: 133px;
+        padding-left: 8rem;
     }
     .phone-about-2{
-        padding-left: 107px;
+        padding-left: 7rem;
     }
     .border-edition-p-3 {
-        padding-left: 17px;
+        padding-left: 1rem;
     }
     .border-edition-p-2 {
-        padding-left: 59px;
+        padding-left: 2rem;
+    }
+    .border-edition-p-1 {
+        padding-left: -1rem;
     }
     .img-2 {
         width: 105%;
@@ -330,6 +502,53 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .logo-adjust-2{
         left: 9rem;
     }
+    .card-img-2 {
+        width: 298px;
+        height: 321px;
+    }
+    .percentage-adjust {
+        left: -24px;
+        top: -14px;
+    }
+    .percentage-adjust-2 {
+        left: -19px;
+        top: -14px;
+    }
+    .icon-adjust {
+        top: 17px;
+        font-size: 20px;
+        left: -18px;
+    }
+    .icon-adjust-2 {
+        top: 14px;
+        font-size: 20px;
+        left: 9px;
+    }
+    .width-adjust {
+        width: 80%;
+    }
+    .nav-item{
+        margin-left: 26px;
+        margin-top: 10px;
+        border: 1px solid white;
+        border-radius: 12px;
+        background-color: #212529;
+    }
+    .nav-link{
+        margin-left: 248px;
+        color: #ffffff !important;
+        font-weight: bold;
+    }
+
+    .navbar-nav{
+        margin-bottom: 8px;
+    }
+
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0 !important;
+        box-shadow: none !important;
+    }
 
 
 }
@@ -341,6 +560,9 @@ and (max-device-width: 1024px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 1) {
 
+    .card-margin{
+        margin-left: 10rem;
+    }
     .adjust-phone{
         margin-left: 0 !important;
     }
@@ -394,6 +616,18 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
     .underline{
         margin-left: 40%;
+    }
+    .percentage-adjust {
+        left: -13px;
+    }
+    .percentage-adjust-2 {
+        left: -4px;
+    }
+    .icon-adjust{
+        left: 0;
+    }
+    .icon-adjust-2{
+        left: 33px;
     }
 
 }
