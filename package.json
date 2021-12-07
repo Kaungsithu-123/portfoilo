@@ -1,0 +1,23 @@
+{
+  "name": "portfoilo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaungMyatHein582/portfoilo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaungMyatHein582/portfoilo/issues"
+  },
+  "homepage": "https://github.com/KaungMyatHein582/portfoilo#readme",
+  "dependencies": {
+    "sweetalert2": "^11.3.0"
+  }
+}
